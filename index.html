@@ -5,10 +5,20 @@
 <title>Anusara Store</title>
 
 <style>
+
+/* 🔥 ปรับขนาดตัวอักษรตรงนี้ที่เดียว */
+:root {
+  --title-size: 28px;     /* ชื่อร้าน */
+  --big-size: 24px;       /* ข้อความหลัก */
+  --small-size: 18px;     /* ข้อความรอง */
+  --button-size: 18px;    /* ขนาดตัวหนังสือในปุ่ม */
+}
+
+/* พื้นฐาน */
 body {
   margin: 0;
   font-family: Arial;
-  background: linear-gradient(to bottom, #1a1a1a, #000);
+  background: #111;
   color: white;
   text-align: center;
 }
@@ -19,32 +29,23 @@ body {
 
 img {
   width: 120px;
-  height: 120px;
   border-radius: 50%;
-  margin-top: 20px;
 }
 
+/* ใช้ค่าจากด้านบน */
 h1 {
-  margin: 10px 0;
-  font-size: 24px;
+  font-size: var(--title-size);
 }
 
-/* 👇 ข้อความหลัก */
 .big-text {
-  font-size: 22px;
+  font-size: var(--big-size);
   font-weight: bold;
-  color: #ffd1dc;
-  margin-top: 10px;
 }
 
-/* 👇 ข้อความรอง */
 .small-text {
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 20px;
+  font-size: var(--small-size);
 }
 
-/* 👇 ปุ่ม */
 .link {
   display: block;
   margin: 12px auto;
@@ -55,15 +56,10 @@ h1 {
   color: white;
   text-decoration: none;
   border-radius: 12px;
-  font-weight: bold;
-  transition: 0.3s;
+  font-size: var(--button-size);
 }
 
-.link:hover {
-  background: #ff1e4d;
-}
 </style>
-
 </head>
 
 <body>
@@ -77,9 +73,10 @@ h1 {
 <p class="big-text">ミ รับทำ ป้ายคิ้วท์ๆ กึ่ง Ads สไตล์น่ารัก ✨</p>
 <p class="small-text">♡ เริ่มต้นเพียง 89 บาท</p>
 
-<a class="link" href="#">Instagram</a>
-<a class="link" href="#">Line</a>
-<a class="link" href="#">TikTok</a>
+<a class="link" href="#">เช็คคิว</a>
+<a class="link" href="#">รายละเอียดการสั่งงาน</a>
+<a class="link" href="#">ตัวอย่างงาน</a>
+<a class="link" href="#">เลือกตูน</a>
 
 </div>
 
